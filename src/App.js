@@ -1,12 +1,12 @@
 import React from "react";
-import ColectionCard from "./components/ColectionCard";
-import Cards from "./components/Cards";
+import MainRoutes from "./routes/MainRoutes";
 
 const App = () => {
-  return <div>
-    {/* <ColectionCard/> */}
-    {/* <Cards/> */}
-  </div>;
+  return (
+    <div>
+      <MainRoutes />
+    </div>
+  );
 };
 
 export default App;
