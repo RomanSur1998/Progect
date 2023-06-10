@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import MainPage from "../components/MainPage";
+import Main from "../components/Main";
 
 const MainRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </div>
   );

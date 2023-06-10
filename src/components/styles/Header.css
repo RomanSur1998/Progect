@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap");
+.header__container,
+.header__text,
+.header__right,
+.header__favorites,
+.header__search {
+  display: flex;
+  align-items: center;
+}
+.header__container h1,
+span {
+  color: #fe589b;
+  font-family: "Cinzel", serif;
+}
+
+.header__container h1 {
+  font-size: 3rem;
+}
+
+.header__container {
+  justify-content: space-between;
+  margin-top: 1em;
+  padding: 1em;
+  height: 60px;
+}
+.header__top {
+  width: 100vw;
+  background-color: #ffebf2;
+  height: 30px;
+  text-align: center;
+  padding-top: 0.3%;
+}
+.header__top span {
+  color: #fe589b;
+  font-family: "Cinzel", serif;
+}
+.header__text {
+  margin-left: 12em;
+}
+.header__text h1:first-child::after {
+  content: "M";
+  font-family: "Cinzel Decorative", cursive;
+  padding-left: 1em;
+}
+.header__search input::placeholder {
+  border: none;
+  color: #fe589b;
+  outline: none;
+}
+.header__search input {
+  border: none;
+  outline: none;
+}
+.header__search {
+  border-bottom: 1px solid #fe589b;
+}
+.header__right {
+  gap: 1em;
+}
+.header__bottom {
+  display: flex;
+  justify-content: center;
+  gap: 1.7em;
+  margin-top: 1em;
+}
+.header__bottom a {
+  text-decoration: none;
+  color: #fe589b;
+  font-family: "Cinzel", serif;
+}
