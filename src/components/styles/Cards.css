@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+.cards__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/testSection.jpg);
+    width: 19vw;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cards__container h2{
+    color: white;
+    font-family: 'Cinzel', serif;
+}
