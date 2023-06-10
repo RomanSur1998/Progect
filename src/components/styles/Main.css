@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+.main__section1{
+    width: 100vw;
+    background-color: #F8D2DD;
+    margin-top: 1em;
+}
+.section1__container{
+    padding: 1em;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section1__text{
+    position: absolute;
+    text-align: center;
+    left: 27%;
+    top: 42%;
+}
+.section1__text h2{
+    color: white;
+    font-family: 'Forum', cursive;
+    font-size: 4rem;
+    font-weight: 100;
+}
+.section1__text button{
+    border: none;
+    color: #FF3285;
+    background-color: white;
+    padding: 0.8rem 1.4rem;
+    border-radius: 1em;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-top: 3em;
+}
