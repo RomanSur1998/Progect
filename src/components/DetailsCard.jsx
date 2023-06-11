@@ -5,12 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "./styles/DetailsCard.css";
 
 const DetailsCard = () => {
-  // Компонент кнопки "Предыдущий слайд"
   const PrevButton = ({ onClick }) => (
     <button onClick={onClick}>Previous</button>
   );
 
-  // Компонент кнопки "Следующий слайд"
   const NextButton = ({ onClick }) => <button onClick={onClick}>Next</button>;
   const settings = {
     dots: true,
@@ -24,7 +22,7 @@ const DetailsCard = () => {
   };
   return (
     <>
-      <div>
+      <div className="setBlock">
         <div>
           <div className="slider">
             <Slider {...settings} className="sliderBlock">

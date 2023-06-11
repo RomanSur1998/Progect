@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+
 .header__container,
 .header__text,
 .header__right,
@@ -32,7 +34,7 @@ span {
 }
 .header__top span {
   color: #fe589b;
-  font-family: "Cinzel", serif;
+  font-family: "Forum", cursive;
 }
 .header__text {
   margin-left: 12em;
@@ -66,5 +68,5 @@ span {
 .header__bottom a {
   text-decoration: none;
   color: #fe589b;
-  font-family: "Cinzel", serif;
+  font-family: "Forum", cursive;
 }

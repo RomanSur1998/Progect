@@ -4,13 +4,11 @@ import img1 from "../assets/section1-photo1.png";
 import img2 from "../assets/secton1-photo2.png";
 import img3 from "../assets/section1-photo3.png";
 import Cards from "./Cards";
-import CollectionList from "./CollectionList";
-import ColectionCard from "./ColectionCard";
-import img4 from "../assets/image 6.png";
-import img5 from "../assets/image 13.png";
-import img6 from "../assets/image 14.png";
-import img7 from "../assets/image 15.png";
-import img8 from "../assets/image 16.png";
+import CarouselContextProvider from "./carousel/CarouselContextProvider";
+import popularSetsPhoto1 from "../assets/popularSetsPhoto1.png";
+import popularSetsPhoto2 from "../assets/popularSetsPhoto2.png";
+import popularSetsPhoto3 from "../assets/popularSetsPhoto3.png";
+import popularSetsPhoto4 from "../assets/popularSetsPhoto4.png";
 import { useNavigate } from "react-router-dom";
 
 const Main = () => {
@@ -36,37 +34,60 @@ const Main = () => {
         </div>
       </section>
       <section className="main__section2">
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
+        <div className="section2__top">
+          <h2>ВЫБЕРИТЕ СВОЙ РАЗМЕР</h2>
+          <div className="section2__category">
+            <button>AA</button>
+            <button>A</button>
+            <button>B</button>
+            <button>C</button>
+            <button>D</button>
+            <button>DD</button>
+            <button>DDD</button>
+            <button>G</button>
+            <button>H</button>
+            <button>J</button>
+          </div>
+        </div>
+        <div className="section2__bottom">
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+        </div>
       </section>
       <section className="main__section3">
-        <img src={img4} alt="" />
-        <img src={img4} alt="" />
-        <div className="section3__text">
-          <h2 className="section3__text__text1">ЗДЕСЬ АКЦИЯ ИЛИ РЕКЛАМА</h2>
-          <h2 className="section3__text__text2">ЗДЕСЬ АКЦИЯ ИЛИ РЕКЛАМА</h2>
+        <div className="section3__top">
+          <h2>
+            ЗДЕСЬ АКЦИЯ <br /> НУ ИЛИ РЕКЛАМКА
+          </h2>
+        </div>
+        <div className="section3__bottom">
+          <h2>
+            ЗДЕСЬ АКЦИЯ <br /> НУ ИЛИ РЕКЛАМКА
+          </h2>
         </div>
       </section>
-      <section className="main__section4"></section>
-
-      <section className="main__section5">
-        <hr className="section5__hr1" />
-        <div className="section5__text">
-          <h2 className="section5__text__text1">INSTAGRAM</h2>
-          <h3 className="section5__text__text2">@intimmate</h3>
-          <h3 className="section5__text__text3">@intimmate_osh</h3>
+      <section className="main__section4">
+        <h3>ПОПУЛЯРНЫЕ КОМПЛЕКТЫ</h3>
+        <div className="section4__container">
+          <CarouselContextProvider>
+            <div className="section4__caroousel_item section4__caroousel_item1">
+              <img src={popularSetsPhoto1} alt="" />
+              <img src={popularSetsPhoto2} alt="" />
+              <img src={popularSetsPhoto3} alt="" />
+              <img src={popularSetsPhoto4} alt="" />
+            </div>
+            <div className="section4__caroousel_item section4__caroousel_item2">
+              <img src={popularSetsPhoto2} alt="" />
+              <img src={popularSetsPhoto1} alt="" />
+              <img src={popularSetsPhoto4} alt="" />
+              <img src={popularSetsPhoto3} alt="" />
+            </div>
+          </CarouselContextProvider>
         </div>
-        <hr className="section5__hr2" />
-        <div className="section5__img-container">
-          <img src={img5} alt="" className="section5__img section__img1" />
-          <img src={img6} alt="" className="section5__img section__img2" />
-          <img src={img7} alt="" className="section5__img section__img3" />
-          <img src={img8} alt="" className="section5__img section__img4" />
-        </div>
-        <hr />
       </section>
+      <section className="main__section5"></section>
     </div>
   );
 };
