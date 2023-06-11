@@ -4,8 +4,12 @@ import img1 from "../assets/section1-photo1.png";
 import img2 from "../assets/secton1-photo2.png";
 import img3 from "../assets/section1-photo3.png";
 import Cards from "./Cards";
+import CollectionList from "./CollectionList";
+import ColectionCard from "./ColectionCard";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <section className="main__section1">
@@ -16,7 +20,13 @@ const Main = () => {
           <div className="section1__text">
             <h2>ВАШ САМЫЙ БЛИЗКИЙ</h2>
             <h2>К ТЕЛУ МАГАЗИН</h2>
-            <button>В МАГАЗИН</button>
+            <button
+              onClick={() => {
+                navigate("/collection");
+              }}
+            >
+              В МАГАЗИН
+            </button>
           </div>
         </div>
       </section>
