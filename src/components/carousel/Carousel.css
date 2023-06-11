@@ -1,0 +1,22 @@
+.carousel__container {
+  width: 95vw;
+  height: 39vh;
+  display: flex;
+  align-items: center;
+}
+
+.carousel__arrow-left,
+.carousel__arrow-right {
+  width: 24px;
+  cursor: pointer;
+}
+.carousel__window {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel__all-page {
+  height: 100%;
+  display: flex;
+  transition: 300ms;
+}
