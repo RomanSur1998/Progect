@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+.favorites__container span, h2, h5, .favorites__size, button{
+  font-family: "Forum", cursive;
+}
+.favorites__category {
+  margin-top: 1rem;
+  width: 100vw;
+  border-top: 1px solid #fe589b;
+  border-bottom: 1px solid #fe589b;
+  padding: 1.3rem;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.favorites__topText {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.favorites__topText h2 {
+  font-size: 2.2rem;
+  font-family: "Forum", cursive;
+  color: #ff3285;
+  font-weight: 100;
+}
+.favorites__topText h5 {
+  font-family: "Forum", cursive;
+  font-size: 1rem;
+  color: #ff3285;
+  font-weight: 100;
+}
+
+.favorites__allProducts {
+  width: 90vw;
+  background-color: #ffeef3;
+  border-radius: 1rem;
+  margin: 3rem auto;
+}
+.favorites__cards-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.favorites__topText {
+  padding: 2rem;
+}
+.favorites__card {
+  width: 20%;
+  background-color: #ffdde7;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+}
+.favorites__card_photo {
+  width: 100%;
+  border-radius: 0.5em;
+}
+.favorites__price-cart {
+  display: flex;
+  justify-content: space-between;
+}
+.favorites__price-cart img{
+    cursor: pointer;
+}
+.favorites__btns {
+  display: flex;
+  justify-content: space-between;
+}
+.favorites__btns button {
+  border: none;
+  background-color: #ff3285;
+  color: white;
+  padding: 6px 1.5rem;
+  border-radius: 0.5em;
+}
+.favorites__size {
+    border: 1px solid#ff3285;
+    color: #ff3285;
+    border-radius: 0.5em;
+}
