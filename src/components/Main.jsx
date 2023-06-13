@@ -10,11 +10,16 @@ import popularSetsPhoto2 from "../assets/popularSetsPhoto2.png";
 import popularSetsPhoto3 from "../assets/popularSetsPhoto3.png";
 import popularSetsPhoto4 from "../assets/popularSetsPhoto4.png";
 import { useNavigate } from "react-router-dom";
+import section5Photo1 from "../assets/section5-photo1.png";
+import section5Photo2 from "../assets/section5-photo2.png";
+import section5Photo3 from "../assets/section5-photo3.png";
+import section5Photo4 from "../assets/section5-photo4.png";
 
 const Main = () => {
   const navigate = useNavigate();
   return (
     <div>
+      <div className="line" style={{marginTop: "1rem"}}></div>
       <section className="main__section1">
         <div className="section1__container">
           <img src={img1} alt="" />
@@ -34,6 +39,7 @@ const Main = () => {
         </div>
       </section>
       <section className="main__section2">
+      <div className="line"></div>
         <div className="section2__top">
           <h2>ВЫБЕРИТЕ СВОЙ РАЗМЕР</h2>
           <div className="section2__category">
@@ -49,12 +55,14 @@ const Main = () => {
             <button>J</button>
           </div>
         </div>
+        <div className="line"></div>
         <div className="section2__bottom">
           <Cards />
           <Cards />
           <Cards />
           <Cards />
         </div>
+      <div className="line"></div>
       </section>
       <section className="main__section3">
         <div className="section3__top">
@@ -69,7 +77,9 @@ const Main = () => {
         </div>
       </section>
       <section className="main__section4">
+        <div className="line"></div>
         <h3>ПОПУЛЯРНЫЕ КОМПЛЕКТЫ</h3>
+        <div className="line"></div>
         <div className="section4__container">
           <CarouselContextProvider>
             <div className="section4__caroousel_item section4__caroousel_item1">
@@ -87,7 +97,26 @@ const Main = () => {
           </CarouselContextProvider>
         </div>
       </section>
-      <section className="main__section5"></section>
+      <section className="main__section5">
+        <div className="section5__container">
+          <div className="line"></div>
+          <div className="section5__top-text">
+            <h3>INSTAGRAM</h3>
+            <div className="section5__top-link">
+              <a href="#">@intimmate</a>
+              <a href="#">@intimmate_osh</a>
+            </div>
+          </div>
+          <div className="line"></div>
+          <div className="section5__images">
+            <img src={section5Photo1} alt="" />
+            <img src={section5Photo2} alt="" />
+            <img src={section5Photo3} alt="" />
+            <img src={section5Photo4} alt="" />
+          </div>
+          <div className="line"></div>
+        </div>
+      </section>
     </div>
   );
 };

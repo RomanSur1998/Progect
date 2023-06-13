@@ -52,6 +52,7 @@ span {
 .header__search input {
   border: none;
   outline: none;
+  color: #fe589b;
 }
 .header__search {
   border-bottom: 1px solid #fe589b;

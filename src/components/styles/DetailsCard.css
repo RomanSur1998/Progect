@@ -1,11 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* !SLIDER START */
 .slider {
   width: 40%;
   display: flex;
+}
+
+.slider button {
+  border: none;
+  background-color: white;
 }
 
 .slider img {
@@ -29,4 +37,90 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* !SLIDER FINISH */
+
+.details__category {
+  margin-top: 1rem;
+  width: 100vw;
+  border-top: 1px solid #fe589b;
+  border-bottom: 1px solid #fe589b;
+  padding: 1.3rem;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.setBlock {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.details__productName {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.details__full {
+  color: #aaa;
+}
+.details__info h3,
+span,
+button,
+a {
+  font-family: "Roboto", sans-serif;
+}
+.details__stars span{
+  padding-left: 6px;
+}
+.details__info {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin-top: 3rem;
+}
+.details__h3S {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.details__color-p {
+  padding-top: 1rem;
+  color: black;
+  font-weight: bol;
+}
+#details__sizeCategory {
+  height: 40px;
+  width: 90px;
+  border: 1px solid #aaa;
+  color: black;
+  border-radius: 0.5em;
+}
+.details__size a {
+  color: black;
+  text-decoration: underline;
+}
+.details__size {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+.details__btns {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.details__btns button {
+  background-color: #fe589b;
+  border: none;
+  border-radius: 9px;
+  width: 60%;
+  height: 60px;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.details__btns img {
+  width: 6%;
+  cursor: pointer;
 }

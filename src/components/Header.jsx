@@ -3,6 +3,7 @@ import "./styles/Header.css";
 import Logo from "../assets/Logo.png";
 import Love from "../assets/love.png";
 import Search from "../assets/search.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -19,7 +20,9 @@ const Header = () => {
         <div className="header__right">
           <div className="header__favorites">
             <img src={Love} alt="" />
+            <Link to="/favorites">
             <span>Избранное</span>
+            </Link>
           </div>
           <div className="header__search">
             <input type="text" placeholder="Что вы ищите?" />
